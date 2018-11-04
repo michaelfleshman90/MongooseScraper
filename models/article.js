@@ -7,6 +7,9 @@ var ArticleSchema = new Schema({
     type: String,
     required: true
   },
+  para: {
+    type: String,
+  },
   link: {
     type: String,
     required: true

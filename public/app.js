@@ -10,7 +10,7 @@ $.getJSON("/articles", function(data) {
   
     $.ajax({
       method: "GET",
-      url: "/articles/" + thisId
+      url: "/articles/:" + thisId
     })
       .then(function(data) {
         console.log(data);
@@ -30,7 +30,7 @@ $.getJSON("/articles", function(data) {
   
     $.ajax({
       method: "POST",
-      url: "/articles/" + thisId,
+      url: "/articles/:" + thisId,
       data: {
         title: $("#titleinput").val(),
         body: $("#bodyinput").val()
